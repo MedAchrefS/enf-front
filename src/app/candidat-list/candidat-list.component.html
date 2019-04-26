@@ -1,0 +1,46 @@
+<h2>Candidat  List</h2>
+<div class="row">
+  <button style="margin-left: 1100px;width: 150px; margin-bottom: 20px;"  class="btn btn-danger" [routerLink]="['/candidat-add']">  Inscription</button>
+  <button style="width: 150px; margin-bottom: 20px;margin-left: 20px;"  class="btn btn-info" (click)="afficherlogin();">  Log in</button>
+  <a routerLink="../candidat-login" class="nav-link" routerLinkActive="active">
+    Create Business
+  </a>
+  <table class="table" style="max-width: 900px; margin-left: 100px;">
+    <thead>
+      <tr class="info">
+        <th class="text-primary">cin</th>
+        <th class="text-primary">nom</th>
+
+        <th class="text-primary">telephone_personnel</th>
+        <th class="text-primary">nomAdministration</th>
+        <th class="text-primary">adresseTravail</th>
+        <th class="text-primary">niveauAcademique</th>
+        <th class="text-primary">gradeActuel</th>
+        <th class="text-primary">descriptionTaches</th>
+        <th class="text-primary">dateLimiteinscription</th>
+        <th class="text-primary">categorie</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let candidat of candidats">
+        <td class="bg-info text-white"> {{candidat.cin}}</td>
+        <td class="bg-info text-white">{{candidat.nom}}</td>
+
+        <td class="bg-info text-white">  {{candidat.telephone_personnel}}    </td>
+        <td class="bg-info text-white"> {{candidat.nomAdministration}}    </td>
+        <td class="bg-info text-white"> {{candidat.lieuTravail}}    </td>
+        <td class="bg-info text-white"> {{candidat.adresseTravail}}    </td>
+        <td class="bg-info text-white">  {{candidat.niveauAcademique}}    </td>
+        <td class="bg-info text-white">  {{candidat.gradeActuel}}    </td>
+        <td class="bg-info text-white"> {{candidat.descriptionTaches}}    </td>
+        <td class="bg-info text-white">  {{candidat.categorie}}    </td>
+
+      </tr>      
+     
+    
+     
+    </tbody>
+  </table>
+</div>
+

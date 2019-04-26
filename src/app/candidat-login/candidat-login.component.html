@@ -1,0 +1,17 @@
+<p>
+  candidat-login 
+</p>
+
+<div class="row">
+  <div class="container">
+    <form #candidatForm="ngForm" (ngSubmit)="login(candidatForm.value)">
+        <div class="form-group">
+            <label for="cin">Entrer le cin  </label>
+            
+              <input class="form-control" style="max-width: 350px;" placeholder="candidat cin" [(ngModel)]="candidat.cin" required name="cin" #cin >
+            
+          </div>
+        <button class="btn btn-success" type="submit">Save</button>
+      </form>
+  </div>
+</div>

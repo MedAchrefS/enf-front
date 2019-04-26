@@ -1,0 +1,104 @@
+<div class="row">
+  <div class="container">
+    <form #candidatForm="ngForm" (ngSubmit)="save(candidatForm.value)">
+      <div>
+        <div><h2>{{candidat.nom ? 'Edit' : 'Add'}} inscription candidat</h2></div>
+      </div>
+      <input type="hidden" name="href" [(ngModel)]="candidat.href">
+      
+      <div class="form-group">
+        <label for="cin">cin </label>
+        
+          <input class="form-control" style="max-width: 350px;" placeholder="candidat cin" [(ngModel)]="candidat.cin" required name="cin" #cin>
+        
+      </div>
+
+      <div class="form-group">
+        <label for="nom">nom </label>
+        
+          <input class="form-control" style="max-width: 350px;" placeholder="candidat nom" [(ngModel)]="candidat.nom" required name="nom" #nom>
+        
+      </div>
+      <div class="form-group">
+        <label for="prenom">prenom  </label>
+        
+          <input class="form-control" style="max-width: 350px;" placeholder="candidat prenom " [(ngModel)]="candidat.prenom" required name="prenom " #prenom>
+        
+      </div>
+      <div class="form-group">
+        <label for="adresse ">adresse  </label>
+        
+          <input class="form-control" style="max-width: 350px;" placeholder="candidat adresse" [(ngModel)]="candidat.adresse" required name="adresse " #adresse>
+        
+      </div>
+      <div class="form-group">
+        <label for="telephone_personnel">telephone_personnel </label>
+        
+          <input class="form-control" style="max-width: 350px;" placeholder="candidat telephone_personnel" [(ngModel)]="candidat.telephone_personnel" required name="telephone_personnel" #telephone_personnel>
+        
+      </div>
+      <div class="form-group">
+        <label for="nomAdministration ">nomAdministration  </label>
+        
+          <input class="form-control" style="max-width: 350px;" placeholder="candidat nomAdministration" [(ngModel)]="candidat.nomAdministration" required name="nomAdministration" #nomAdministration >
+        
+      </div>
+      <div class="form-group">
+        <label for="lieuTravail">lieuTravail  </label>
+        
+          <input class="form-control" style="max-width: 350px;" placeholder="candidat lieuTravail" [(ngModel)]="candidat.lieuTravail" required name="lieuTravail" #lieuTravail >
+        
+      </div>
+      <div class="form-group">
+        <label for="adresseTravail">adresseTravail  </label>
+        
+          <input class="form-control" style="max-width: 350px;" placeholder="candidat adresseTravail" [(ngModel)]="candidat.adresseTravail" required name="adresseTravail" #adresseTravail >
+        
+      </div>
+      <div class="form-group">
+        <label for="niveauAcademique">niveauAcademique  </label>
+        
+          <input class="form-control" style="max-width: 350px;" placeholder="candidat niveauAcademique" [(ngModel)]="candidat.niveauAcademique" required name="niveauAcademique" #niveauAcademique >
+        
+      </div>
+      <div class="form-group">
+        <label for="gradeActuel">gradeActuel  </label>
+        
+          <input class="form-control" style="max-width: 350px;" placeholder="candidat gradeActuel" [(ngModel)]="candidat.gradeActuel" required name="gradeActuel" #gradeActuel >
+        
+      </div>
+      <div class="form-group">
+        <label for="descriptionTaches">descriptionTaches  </label>
+        
+          <input class="form-control" style="max-width: 350px;" placeholder="candidat descriptionTaches" [(ngModel)]="candidat.descriptionTaches" required name="descriptionTaches" #descriptionTaches >
+        
+      </div>
+      <div class="form-group">
+        <label for="dateLimiteinscription">dateLimiteinscription  </label>
+        
+          <input class="form-control" style="max-width: 350px;" placeholder="candidat dateLimiteinscription" [(ngModel)]="candidat.dateLimiteinscription" required name="dateLimiteinscription" #dateLimiteinscription >
+        
+      </div>
+      <div class="form-group">
+        <label for="categorie">categorie  </label>
+        
+          <input class="form-control" style="max-width: 350px;" placeholder="candidat categorie" [(ngModel)]="candidat.categorie" required name="categorie" #categorie >
+        
+      </div>
+      
+      
+      
+      
+      
+      <div>
+        <button class="btn btn-success" type="submit">Save</button>
+      
+        <a class="btn btn-info" style="margin-left: 200px;" routerLink="/candidat-list">Cancel</a>
+      </div>
+      <div>
+       
+      </div>
+    </form>
+  </div>
+  </div>
+   
